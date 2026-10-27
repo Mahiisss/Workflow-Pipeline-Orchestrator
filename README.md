@@ -264,27 +264,9 @@ Open http://localhost:5678 and create a workflow:
 
 ---
 
-## ⚠️ Known Limitations
 
-- The **Condition** node checks equality and flags the result, but does not yet route data down separate true/false paths
-- `{{variables}}` in the **Text** node create input handles in the editor, but are not yet filled in during execution
-- The **Database** node is simulated
-- When a node has more than one incoming connection, it uses the output of the last one
-- The **API** node supports GET and POST
 
----
 
-## 🔮 Roadmap
-
-- [ ] True/false branching for the Condition node
-- [ ] Variable substitution for Text node templates
-- [ ] Workflow scheduling (cron-style triggers)
-- [ ] Retries and failure recovery per node
-- [ ] Persistent storage (PostgreSQL / MongoDB)
-- [ ] Authentication and user workspaces
-- [ ] LLM nodes (prompting, embeddings, vector search)
-
----
 
 <div align="center">
 
